@@ -33,8 +33,8 @@ export const Login: React.FC = () => {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 p-4">
       <div className="w-full max-w-md">
         <div className="text-center mb-10">
-          <h1 className="text-3xl font-light text-textColor-primary mb-2 tracking-tight">Reservas Admin Barceló</h1>
-          <p className="text-textColor-secondary font-light">Inicia sesión para acceder al sistema</p>
+          <h1 className="text-3xl font-light text-gray-800 mb-2 tracking-tight">Reservas Admin Barceló</h1>
+          <p className="text-gray-500 font-light">Inicia sesión para acceder al sistema</p>
         </div>
 
         <Card className="shadow-soft-lg">
@@ -81,7 +81,7 @@ export const Login: React.FC = () => {
               >
                 ¿Olvidaste tu contraseña?
               </Link>
-              <div className="text-sm text-textColor-secondary font-light">
+              <div className="text-sm text-gray-500 font-light">
                 ¿No tienes cuenta?{' '}
                 <Link to="/register" className="text-primary-600 hover:text-primary-700 font-normal">
                   Regístrate aquí

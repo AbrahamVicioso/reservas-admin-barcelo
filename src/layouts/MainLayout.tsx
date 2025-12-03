@@ -122,21 +122,21 @@ export const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
           <div className="flex items-center justify-between">
             <button
               onClick={() => setSidebarOpen(true)}
-              className="lg:hidden text-textColor-secondary hover:text-textColor-primary transition-colors"
+              className="lg:hidden text-gray-500 hover:text-gray-800 transition-colors"
             >
               <Menu className="w-6 h-6" strokeWidth={1.5} />
             </button>
 
             <div className="flex-1 lg:ml-0 ml-4">
-              <h2 className="text-2xl font-light text-textColor-primary tracking-tight">
+              <h2 className="text-2xl font-light text-gray-800 tracking-tight">
                 {navItems.find((item) => item.path === location.pathname)?.label || 'Dashboard'}
               </h2>
             </div>
 
             <div className="flex items-center gap-5 relative">
               <div className="text-right">
-                <p className="text-sm font-normal text-textColor-primary">{user?.email || 'Usuario'}</p>
-                <p className="text-xs text-textColor-light font-light">
+                <p className="text-sm font-normal text-gray-800">{user?.email || 'Usuario'}</p>
+                <p className="text-xs text-gray-400 font-light">
                   {user?.isEmailConfirmed ? 'Email verificado' : 'Email pendiente'}
                 </p>
               </div>
@@ -158,7 +158,7 @@ export const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
                   <div className="absolute right-0 top-12 mt-2 w-48 bg-white rounded-lg shadow-soft-lg border border-gray-100 py-1 z-20">
                     <button
                       onClick={handleLogout}
-                      className="w-full flex items-center gap-2 px-4 py-2.5 text-sm text-textColor-secondary hover:bg-gray-50 hover:text-textColor-primary transition-colors font-light"
+                      className="w-full flex items-center gap-2 px-4 py-2.5 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-800 transition-colors font-light"
                     >
                       <LogOut className="w-4 h-4" strokeWidth={1.5} />
                       Cerrar sesión

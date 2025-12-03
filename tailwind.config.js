@@ -28,12 +28,6 @@ export default {
           bg: '#ffffff',
           card: '#ffffff',
         },
-        textColor: {
-          primary: '#1f2937',
-          secondary: '#6b7280',
-          light: '#9ca3af',
-          sidebar: '#d1d5db',
-        },
         success: {
           light: '#86efac',
           DEFAULT: '#22c55e',

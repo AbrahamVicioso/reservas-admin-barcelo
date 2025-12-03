@@ -21,7 +21,7 @@ export function Table<T extends Record<string, any>>({ data, columns, onRowClick
             {columns.map((column) => (
               <th
                 key={column.key}
-                className="px-6 py-4 text-left text-xs font-normal text-textColor-light uppercase tracking-wide"
+                className="px-6 py-4 text-left text-xs font-normal text-gray-400 uppercase tracking-wide"
               >
                 {column.label}
               </th>
@@ -33,7 +33,7 @@ export function Table<T extends Record<string, any>>({ data, columns, onRowClick
             <tr>
               <td
                 colSpan={columns.length}
-                className="px-6 py-16 text-center text-textColor-light font-light"
+                className="px-6 py-16 text-center text-gray-400 font-light"
               >
                 No hay datos disponibles
               </td>
@@ -46,7 +46,7 @@ export function Table<T extends Record<string, any>>({ data, columns, onRowClick
                 className={onRowClick ? 'hover:bg-gray-50/50 cursor-pointer transition-all duration-150' : ''}
               >
                 {columns.map((column) => (
-                  <td key={column.key} className="px-6 py-4 whitespace-nowrap text-sm text-textColor-secondary font-light">
+                  <td key={column.key} className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 font-light">
                     {column.render ? column.render(item) : item[column.key]}
                   </td>
                 ))}

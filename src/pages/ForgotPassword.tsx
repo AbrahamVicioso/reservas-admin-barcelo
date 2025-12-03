@@ -33,8 +33,8 @@ export const ForgotPassword: React.FC = () => {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 p-4">
       <div className="w-full max-w-md">
         <div className="text-center mb-10">
-          <h1 className="text-3xl font-light text-textColor-primary mb-2 tracking-tight">Recuperar contraseña</h1>
-          <p className="text-textColor-secondary font-light">
+          <h1 className="text-3xl font-light text-gray-800 mb-2 tracking-tight">Recuperar contraseña</h1>
+          <p className="text-gray-500 font-light">
             Ingresa tu correo y te enviaremos instrucciones para restablecer tu contraseña
           </p>
         </div>
