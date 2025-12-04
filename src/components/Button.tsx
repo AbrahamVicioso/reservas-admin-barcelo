@@ -17,11 +17,11 @@ export const Button: React.FC<ButtonProps> = ({
   disabled,
   ...props
 }) => {
-  const baseStyles = 'font-normal rounded-md transition-all duration-200 inline-flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed shadow-soft hover:shadow-soft-md';
+  const baseStyles = 'font-normal rounded-sm transition-all duration-200 inline-flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed shadow-soft hover:shadow-soft-md';
 
   const variants = {
     primary: 'bg-primary-600 text-white hover:bg-primary-700 focus:ring-2 focus:ring-primary-400/30 active:bg-primary-800',
-    secondary: 'bg-white text-gray-800 border border-gray-200 hover:bg-gray-50 focus:ring-2 focus:ring-gray-200/50 active:bg-gray-100',
+    secondary: 'bg-card text-text-primary border border-border-card hover:bg-primary-50 focus:ring-2 focus:ring-border-card/50 active:bg-primary-100',
     danger: 'bg-danger text-white hover:bg-danger-dark focus:ring-2 focus:ring-danger/30 active:bg-danger-dark',
     success: 'bg-success text-white hover:bg-success-dark focus:ring-2 focus:ring-success/30 active:bg-success-dark',
   };

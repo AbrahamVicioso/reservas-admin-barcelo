@@ -7,51 +7,52 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: {
-          50: '#f0f7ff',
-          100: '#e0effe',
-          200: '#b9ddfe',
-          300: '#7cc0fd',
-          400: '#36a0fa',
-          500: '#0b84eb',
-          600: '#0067c9',
-          700: '#0052a3',
-          800: '#064686',
-          900: '#0F213A', // Azul marino oscuro principal
+        // Sidebar
+        'sidebar': '#0F213A',
+        'sidebar-selected': '#1C2E4A',
+        'sidebar-hover': '#243B5A',
+        'text-sidebar': '#C9D1D9',
+        'text-pale': '#FFFFFF',
+
+        // Backgrounds
+        'background': '#F4F6F8',
+        'card': '#FFFFFF',
+        'border-card': '#E3E6EA',
+
+        // Typography
+        'text-primary': '#1B1F24',
+        'text-secondary': '#4B5563',
+        'text-descriptive': '#6B7280',
+        'text-weak': '#9CA3AF',
+
+        // Accents
+        'primary': {
+          50: '#EFF6FF',
+          100: '#DBEAFE',
+          200: '#BFDBFE',
+          300: '#93C5FD',
+          400: '#60A5FA',
+          500: '#3B82F6',
+          600: '#1A73E8',
+          700: '#0B66C2',
+          800: '#1E40AF',
+          900: '#1E3A8A',
         },
-        sidebar: {
-          DEFAULT: '#0F213A',
-          light: '#1a2f4a',
-          dark: '#0a1525',
-        },
-        content: {
-          bg: '#ffffff',
-          card: '#ffffff',
-        },
-        success: {
-          light: '#86efac',
-          DEFAULT: '#22c55e',
-          dark: '#16a34a',
-        },
-        danger: {
-          light: '#fca5a5',
-          DEFAULT: '#ef4444',
-          dark: '#dc2626',
-        },
-      },
-      fontFamily: {
-        sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
-      },
-      fontWeight: {
-        light: '300',
-        normal: '400',
-        medium: '500',
-        semibold: '600',
+        'success': '#22C55E',
+        'success-light': '#A3E3B1',
+        'success-dark': '#16A34A',
+        'danger': '#EF4444',
+        'danger-light': '#FCA5A5',
+        'danger-dark': '#DC2626',
+        'danger-notification': '#FF3B30',
+
+        // Icons
+        'icon-inactive': '#D1D5DB',
       },
       boxShadow: {
-        'soft': '0 1px 3px 0 rgba(0, 0, 0, 0.05)',
-        'soft-md': '0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03)',
-        'soft-lg': '0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.03)',
+        'soft': '0 1px 3px rgba(0, 0, 0, 0.05)',
+        'soft-md': '0 4px 6px rgba(0, 0, 0, 0.07)',
+        'soft-lg': '0 10px 15px rgba(0, 0, 0, 0.1)',
       },
     },
   },

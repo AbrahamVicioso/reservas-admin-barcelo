@@ -1,7 +1,7 @@
-@import "tailwindcss";
-
 /* Importar fuente Inter con diferentes pesos */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+@import "tailwindcss";
 
 :root {
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -9,41 +9,4 @@
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
   letter-spacing: 0.01em;
-}
-
-body {
-  margin: 0;
-  min-height: 100vh;
-  @apply bg-gray-50 text-gray-800;
-  font-weight: 400;
-}
-
-/* Estilos para títulos con peso ligero y moderno */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 500;
-  letter-spacing: -0.02em;
-}
-
-/* Estilos para texto con espaciado generoso */
-p {
-  line-height: 1.6;
-}
-
-/* Scrollbar personalizado para un look más limpio */
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f5f9;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
 }

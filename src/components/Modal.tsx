@@ -40,12 +40,12 @@ export const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, children, 
       <div className="flex min-h-full items-center justify-center p-4">
         <div className="fixed inset-0 bg-black/50 transition-opacity" onClick={onClose} />
 
-        <div className={`relative bg-white rounded-xl shadow-xl ${sizes[size]} w-full`}>
-          <div className="flex items-center justify-between p-6 border-b border-gray-200">
-            <h2 className="text-xl font-semibold text-gray-900">{title}</h2>
+        <div className={`relative bg-card rounded-lg shadow-soft-lg ${sizes[size]} w-full`}>
+          <div className="flex items-center justify-between p-6 border-b border-border-card">
+            <h2 className="text-xl font-semibold text-text-primary">{title}</h2>
             <button
               onClick={onClose}
-              className="text-gray-400 hover:text-gray-600 transition-colors"
+              className="text-text-weak hover:text-text-descriptive transition-colors"
             >
               <X className="w-5 h-5" />
             </button>
